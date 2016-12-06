@@ -27051,7 +27051,9 @@ module.exports = function(context) {
             }, {
                 title: 'FOTO',
                 layer: L.tileLayer('http://kaart.maakaart.ee/orto/{z}/{x}/{y}.jpeg', {
-                attribution: 'FOTO &copy; <a title="Maa-amet" href="http://geoportaal.maaamet.ee" target="_blank">Maa-amet</a>'
+                    maxZoom: 18,
+                    minZoom: 4,
+                    attribution: 'FOTO &copy; <a title="Maa-amet" href="http://geoportaal.maaamet.ee" target="_blank">Maa-amet</a>'
                 })
             }, {
                 title: 'OSM',
